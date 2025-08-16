@@ -1,0 +1,46 @@
+[05-Feb-2025 02:15:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Core\Database::beginTransaction() in C:\xampp\htdocs\system\public\views\adviser\bulk-add-students.php:48
+Stack trace:
+#0 C:\xampp\htdocs\system\Core\Router.php(40): require()
+#1 C:\xampp\htdocs\system\public\index.php(28): Core\Router->route('/bulk-add-stude...', 'POST')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\public\views\adviser\bulk-add-students.php on line 48
+[05-Feb-2025 02:15:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Core\Database::beginTransaction() in C:\xampp\htdocs\system\public\views\adviser\bulk-add-students.php:48
+Stack trace:
+#0 C:\xampp\htdocs\system\Core\Router.php(40): require()
+#1 C:\xampp\htdocs\system\public\index.php(28): Core\Router->route('/bulk-add-stude...', 'POST')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\public\views\adviser\bulk-add-students.php on line 48
+[05-Feb-2025 02:20:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Core\Database::getConnection() in C:\xampp\htdocs\system\public\views\adviser\bulk-add-students.php:111
+Stack trace:
+#0 C:\xampp\htdocs\system\Core\Router.php(40): require()
+#1 C:\xampp\htdocs\system\public\index.php(28): Core\Router->route('/bulk-add-stude...', 'POST')
+#2 {main}
+  thrown in C:\xampp\htdocs\system\public\views\adviser\bulk-add-students.php on line 111
+[05-Feb-2025 02:32:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-Curriculum-2018-2019,
+                `year` VARCHAR(255) NOT NULL,
+      ...' at line 3 in C:\xampp\htdocs\system\Core\Database.php:26
+Stack trace:
+#0 C:\xampp\htdocs\system\Core\Database.php(26): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\system\public\views\adviser\bulk-add-students.php(111): Core\Database->query('CREATE TABLE IF...')
+#2 C:\xampp\htdocs\system\Core\Router.php(40): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\system\public\index.php(28): Core\Router->route('/bulk-add-stude...', 'POST')
+#4 {main}
+  thrown in C:\xampp\htdocs\system\Core\Database.php on line 26
+[27-Feb-2025 01:54:11 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\lenovo\Desktop\Projects\system\public\views\adviser\bulk-add-students.php on line 50
+[27-Feb-2025 01:58:31 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\lenovo\Desktop\Projects\system\public\views\adviser\bulk-add-students.php on line 50
+[15-May-2025 02:52:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subjectYear' in 'field list' in C:\Users\lenovo\Desktop\Projects\system\Core\Database.php:27
+Stack trace:
+#0 C:\Users\lenovo\Desktop\Projects\system\Core\Database.php(27): PDOStatement->execute(Array)
+#1 C:\Users\lenovo\Desktop\Projects\system\public\views\adviser\bulk-add-students.php(154): Core\Database->query('INSERT INTO `20...', Array)
+#2 C:\Users\lenovo\Desktop\Projects\system\Core\Router.php(40): require('C:\\Users\\lenovo...')
+#3 C:\Users\lenovo\Desktop\Projects\system\public\index.php(29): Core\Router->route('/bulk-add-stude...', 'POST')
+#4 {main}
+  thrown in C:\Users\lenovo\Desktop\Projects\system\Core\Database.php on line 27
+[15-May-2025 03:00:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table '2021_00001' already exists in C:\Users\lenovo\Desktop\Projects\system\Core\Database.php:27
+Stack trace:
+#0 C:\Users\lenovo\Desktop\Projects\system\Core\Database.php(27): PDOStatement->execute(Array)
+#1 C:\Users\lenovo\Desktop\Projects\system\public\views\adviser\bulk-add-students.php(112): Core\Database->query('CREATE TABLE `2...')
+#2 C:\Users\lenovo\Desktop\Projects\system\Core\Router.php(40): require('C:\\Users\\lenovo...')
+#3 C:\Users\lenovo\Desktop\Projects\system\public\index.php(29): Core\Router->route('/bulk-add-stude...', 'POST')
+#4 {main}
+  thrown in C:\Users\lenovo\Desktop\Projects\system\Core\Database.php on line 27
