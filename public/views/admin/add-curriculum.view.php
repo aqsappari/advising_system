@@ -22,7 +22,7 @@ if ($_SESSION['role'] != 'Admin') {
 
   <link rel="icon" href="/system/public/img/Western_Mindanao_State_University.png" type="image/png" />
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/output.css">
+  <!-- <link rel="stylesheet" href="/css/output.css"> -->
   <link rel="stylesheet" href="/css/add-curriculum.css" />
 </head>
 
